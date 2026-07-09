@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment / secrets (not currently used, kept as a guard rail)
+.env
+.env.local
+
+# In case a build step or dependency manager is added later
+/node_modules
+/dist
+/build

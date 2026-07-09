@@ -1,0 +1,59 @@
+/**
+ * Print stylesheet — triggered by the "Print receipt" button (window.print())
+ * or the browser's native print command (Ctrl/Cmd+P).
+ *
+ * Goal: print a clean, single receipt — not the sidebar, nav, or the
+ * host-note / arrival / wifi / breakfast cards, which are irrelevant on paper.
+ */
+
+@media print {
+  /* Hide everything that isn't the receipt */
+  .nav-toggle,
+  .scrim,
+  .sidebar,
+  .topbar .actions,
+  .welcome-card,
+  .info-row,
+  .attribution {
+    display: none !important;
+  }
+
+  .app {
+    display: block;
+  }
+
+  .main {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .cards-stack {
+    display: block;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .receipt-card {
+    border: 1px solid #000;
+    box-shadow: none;
+    border-radius: 0;
+    page-break-inside: avoid;
+  }
+
+  /* Ticket notches rely on the page background colour to fake a cutout;
+     that trick doesn't work on paper, so hide them for print */
+  .receipt-card .tear::before,
+  .receipt-card .tear::after {
+    display: none;
+  }
+
+  .topbar h1 {
+    font-size: 24px;
+  }
+
+  a[href]::after {
+    content: '';
+  }
+}
