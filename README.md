@@ -30,14 +30,6 @@ Users can:
 - Print a clean, receipt-only view of the booking
 - Download the stay as a real `.ics` calendar file
 
-### Screenshots
-
-Desktop:
-![Desktop view](./assets/images/screenshot-desktop.png)
-
-Mobile:
-![Mobile view](./assets/images/screenshot-mobile.png)
-
 ### Links
 
 - Solution URL: [Add your repo URL here]
