@@ -32,8 +32,8 @@ Users can:
 
 ### Links
 
-- Solution URL: [Add your repo URL here]
-- Live Site URL: [Add your deployed Vercel URL here]
+- Solution URL: [https://github.com/MinahilFatima18/Hotel-Booking-Confirmation]
+- Live Site URL: [https://minahilfatima18.github.io/Hotel-Booking-Confirmation/]
 
 ## My process
 
